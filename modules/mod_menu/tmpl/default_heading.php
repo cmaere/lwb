@@ -22,4 +22,8 @@ else
 	$linktype = $item->title;
 }
 ?>
-<span class="nav-header <?php echo $item->anchor_css; ?>" <?php echo $title; ?>><?php echo $linktype; ?></span>
+
+							<a class="maximenuck " href="#">
+								<span class="titreck"><?php echo $linktype; ?></span>
+							</a>
+
