@@ -1,0 +1,313 @@
+.menu-collapser {
+    position: relative;
+    background-color:#00537F;
+    color: #FFF;
+    text-shadow: 0 1px 0 rgba(0,0,0,0.5);
+    width: 100%;
+    height: 48px;
+    line-height: 48px;
+    font-size: 16px;
+    padding: 0 8px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+	text-align:center;
+}
+.collapse-button {
+    position: absolute;
+    right: 8px;
+    top: 50%;
+    width: 40px;
+    background-color: #0E0E0E;
+    background-image: linear-gradient(to bottom, #151515, #040404);
+    background-repeat: repeat-x;
+    border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+    border-radius: 4px 4px 4px 4px;
+    border-style: solid;
+    border-width: 1px;
+    color: #FFFFFF;
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1) inset, 0 1px 0 rgba(255, 255, 255, 0.075);
+    padding: 7px 10px;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+    font-size: 14px;
+    text-align: center;
+
+    transform: translate(0, -50%);
+    -o-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+    -moz-transform: translate(0, -50%);
+    -webkit-transform: translate(0, -50%);
+
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box
+}
+.collapse-button:hover, .collapse-button:focus {
+    background-image: none;
+    background-color: #040404;
+    color: #FFF;
+}
+.collapse-button .icon-bar {
+    background-color: #F5F5F5;
+    border-radius: 1px 1px 1px 1px;
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.25);
+    display: block;
+    height: 2px;
+    width: 18px;
+    margin: 2px 0;
+}
+
+ul.slimmenu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+
+ul.slimmenu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 100%\0/Ie8;
+	background:#F8F8F8\0/Ie8;
+	text-align:left;
+}
+ul.slimmenu li {
+    position: relative;
+    display: inline-block;
+	text-align:left;
+ }
+ul.slimmenu > li { margin-right: 0;   }
+ul.slimmenu > li:first-child { border-left: 0 }
+ul.slimmenu > li:last-child { margin-right: 0 }
+ul.slimmenu li a {
+    display: block;
+    color: #333;
+ color: #0093df;
+    display: inline-block;
+    line-height: 50px;
+    outline: 0 none;
+    padding: 1px 8px;
+    position: relative;
+    text-decoration: none;
+    text-transform: uppercase;
+    white-space: nowrap;    transition: background-color 0.5s ease-out;
+    -o-transition: background-color 0.5s ease-out;
+    -moz-transition: background-color 0.5s ease-out;
+    -webkit-transition: background-color 0.5s ease-out;
+	font-size:13px;
+}
+ul.slimmenu li a:hover,
+ul.slimmenu li.active,
+ul.slimmenu li.active a {
+    background: #0093e0;
+    text-decoration: none;
+	color:#fff;
+	
+}
+ul.slimmenu li a:hover,
+ul.slimmenu li.active ul li a,
+ul.slimmenu li ul li a,
+ul.slimmenu li ul li.active,
+ul.slimmenu li.active ul li a:hover
+{    
+background:none;
+color:#0093e0;
+ }
+
+ul.slimmenu li.active a:hover
+{    
+ color:#fff;
+ }
+ul.slimmenu li .sub-collapser {
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0.075);
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 48px;
+    height: 100%;
+    text-align: center;
+    z-index: 999;
+    cursor: pointer;
+}
+ul.slimmenu li .sub-collapser:before {
+    content: '';
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+    margin-right: -0.25em;
+}
+ul.slimmenu li .sub-collapser > i {
+    color: #333;
+    font-size: 18px;
+    display: inline-block;
+    vertical-align: middle;
+}
+ul.slimmenu li ul {
+    margin: 0;
+    list-style-type: none;
+}
+ul.slimmenu li ul li { 
+background: #F8F8F8;
+line-height:34px;
+border-bottom:1px solid #09F;
+padding:15px 0;
+ }
+ ul.slimmenu li ul li.active,
+  ul.slimmenu li ul{ 
+background: #F8F8F8;
+  }
+ 
+ul.slimmenu li ul li a{
+	width:90%;	
+	line-height:21px;
+	text-transform:none;
+}
+ul.slimmenu li ul li:hover a{
+	background:#F8F8F8;
+	color:#0093E0;
+}
+ul.slimmenu li ul li:last-child{
+	border:none;
+}	
+ul.slimmenu li ul { 
+border-radius:0 0 5px 5px;
+
+ 
+}
+
+ul.slimmenu li > ul {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    z-index: 999;
+    width: 100%;
+}
+ul.slimmenu li > ul {
+     left: -13px\0/Ie8;
+ 
+}
+
+ul.slimmenu li > ul > li ul {
+    display: none;
+    position: absolute;
+    left: 100%;
+    top: 0;
+    z-index: 999;
+    width: 100%;
+}
+
+ul.slimmenu.collapsed li {
+    display: block;
+    width: 100%;
+
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box
+}
+ul.slimmenu.collapsed li a {
+    display: block;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.075);
+     box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box
+}
+ul.slimmenu.collapsed li ul li a
+{
+    border-bottom:none;
+	
+}
+ul.slimmenu.collapsed li .sub-collapser {
+    height: 52px;
+}
+ul.slimmenu.collapsed li > ul {
+    display: none;
+    position: static;
+}
+
+
+#navigation .sub-collapser{
+ }
+
+#navigation .parent:after {
+ display: inline-block;
+    height: 100%;
+    margin-right: -0.25em;
+    vertical-align: top;
+ }
+
+
+
+#line .collapsed .sub-collapser{
+	display:block;
+}
+
+#line .collapsed .parent:after {
+    content: inherit;
+ }
+ 
+ #header ul.collapsed li ul{
+	position:relative;
+	top:inherit;
+	padding:inherit;
+}
+#header ul.collapsed li ul{
+	border:none;
+	border-radius:0;	
+	width:100%;
+	
+}
+ #header ul.collapsed li{
+		border:none; 
+ }
+#header ul.collapsed li ul li:hover a{
+	background:#119ae2;
+	color:#fff;
+}
+#header ul.collapsed li ul li a {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.075);
+    box-sizing: border-box;
+    display: block;
+    padding: 9px 9px;
+}
+ul.collapsed li a:hover{
+	background:#119ae2;
+	color:#fff;
+}
+ul.slimmenu li ul li a,
+ul.slimmenu li ul li:hover a{
+	width:90%;
+}
+
+ul.slimmenu li ul li:hover{
+ 	background:#0093E0;
+	color:#fff;
+  }
+ 
+ul.slimmenu li ul li:hover a{
+ 	background:none;
+	color:#fff;
+ 
+ }
+ 
+ 
+ul.slimmenu li ul li a,
+ul.slimmenu li ul li:hover a{
+	width:91%\0/Ie8;
+ }
+ul.slimmenu li ul li i {
+    padding: 0 7px 0 0;
+}
+
+li.active ul li:hover a,
+ul.slimmenu li.active ul li:hover a,
+ul.slimmenu li.active ul li a:hover,
+ul.slimmenu li ul li:hover a,
+ul.slimmenu li ul li.active,
+ul.slimmenu li ul li.active a{
+ 	background:#0093E0;
+	color:#fff !important;
+}

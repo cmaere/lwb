@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-gb" lang="en-gb" dir="ltr">
+
+<!-- Mirrored from waterboard.lk/web/index.php?option=com_gmapfp&view=gmapfp&tmpl=component&layout=print_article&flag=1&id=9&Itemid=407&lang=en by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 19 Oct 2015 18:11:55 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <meta name="description" content="National Water Supply and Drainage Board" />
+  <meta name="generator" content="Joomla! - Open Source Content Management" />
+  <title>Regional Map</title>
+  <link href="index83c3.html?option=com_gmapfp&amp;view=gmapfp&amp;tmpl=component&amp;layout=print_article&amp;flag=1&amp;id=9&amp;Itemid=407&amp;lang=en" rel="canonical" />
+  <link href="templates/poora_temp/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon" />
+  <link rel="stylesheet" href="plugins/system/osolcaptcha/osolCaptcha/captchaStyle.css" type="text/css" />
+  <link rel="stylesheet" href="media/system/css/modal.css" type="text/css" />
+  <link rel="stylesheet" href="plugins/system/rokbox/assets/styles/rokbox.css" type="text/css" />
+  <link rel="stylesheet" href="templates/poora_temp/css/template.css" type="text/css" />
+  <script src="media/system/js/mootools-core.js" type="text/javascript"></script>
+  <script src="media/jui/js/jquery.min.js" type="text/javascript"></script>
+  <script src="media/jui/js/jquery-noconflict.js" type="text/javascript"></script>
+  <script src="media/jui/js/jquery-migrate.min.js" type="text/javascript"></script>
+  <script src="media/system/js/core.js" type="text/javascript"></script>
+  <script src="media/system/js/mootools-more.js" type="text/javascript"></script>
+  <script src="media/system/js/modal.js" type="text/javascript"></script>
+  <script src="media/jui/js/bootstrap.min.js" type="text/javascript"></script>
+  <script src="plugins/system/rokbox/assets/js/rokbox.js" type="text/javascript"></script>
+  <script type="text/javascript">
+
+		   
+		   				function reloadCapthcha(instanceNo)
+						{
+							var captchaSrc = "indexe52b.jpg?showCaptcha=True&amp;instanceNo="+instanceNo+"&time="+ new Date().getTime();
+							//alert(captachaSrc);
+							//alert(document.getElementById('captchaCode'+instanceNo));
+							document.getElementById('captchaCode'+instanceNo).src = captchaSrc ;
+							//alert(document.getElementById('captchaCode'+instanceNo).src);
+						} 
+						
+		jQuery(function($) {
+			SqueezeBox.initialize({});
+			SqueezeBox.assign($('a.modal').get(), {
+				parse: 'rel'
+			});
+		});if (typeof RokBoxSettings == 'undefined') RokBoxSettings = {pc: '100'};
+  </script>
+  <script type="text/javascript"> 
+			var markerImage = new Array();
+			 markerImage[1] = new Image();  markerImage[1].src = "http://www.google.com/mapfiles/marker.png";
+ 
+		</script>
+  <link rel="stylesheet" href="components/com_gmapfp/views/gmapfp/gmapfp.css" type="text/css" />
+  <link rel="stylesheet" href="components/com_gmapfp/views/gmapfp/gmapfp2.html" type="text/css" />
+  <link rel="stylesheet" type="text/css" href="components/com_gmapfp/floatbox/floatbox.css" />
+  <script type="text/javascript" src="components/com_gmapfp/floatbox/floatbox.js"></script>
+  <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+  <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=true&amp;language=en-GB&amp;libraries=places,panoramio"></script>
+  <script type="text/javascript" src="components/com_gmapfp/libraries/map.js"></script>
+  <script type="text/javascript">
+        
+	var infowindow = new Array();
+	var num_open = 0;
+	var places  = [];
+            var infowindowLevel = 0;
+			var bounds_GMapFP = new google.maps.LatLngBounds();
+			var marker = new Array();
+           
+    
+		var moreControlText = [ "More", "Click to open", "Click to set", "Panoramino Photos", "Show traffic"];
+        var carteGMapFP;
+        var panoramioLayer;
+        var trafficLayer;
+		var travel_mode = google.maps.DirectionsTravelMode.DRIVING;
+		var marker_precedent = 0;
+		var markerCluster = null;
+
+        function create_carteGMapFP() {
+            var types = [google.maps.MapTypeId.HYBRID,google.maps.MapTypeId.ROADMAP,google.maps.MapTypeId.TERRAIN,google.maps.MapTypeId.SATELLITE];
+			var mycentre = new google.maps.LatLng(47.927644470, 2.1391367912);
+            var myOptions = {
+              zoom: 13,
+              center: mycentre,
+              zoomControl: true, panControl: true,
+                  navigationControlOptions: {style: google.maps.NavigationControlStyle.ZOOM_PAN},
+              scaleControl: true,
+              scrollwheel: true,
+              overviewMapControl: true,
+              streetViewControl: false,
+              mapTypeControlOptions: {
+                
+                mapTypeIds: types
+              },
+              mapTypeId: google.maps.MapTypeId.ROADMAP
+            };
+            carteGMapFP = new google.maps.Map(document.getElementById("map_canvas"),myOptions);
+
+
+
+          panoramioLayer = new google.maps.panoramio.PanoramioLayer();
+				panoramioLayer.setMap(null);
+				panoramioLayer.enable = false;
+		
+            trafficLayer = new google.maps.TrafficLayer();
+			trafficLayer.enable = false;
+		  carteGMapFP.setTilt(45);
+		  var moreControlDiv = document.createElement('DIV');
+		  var moreControl = new MoreControl("carteGMapFP", moreControlDiv, "panoramioLayer", 0, "trafficLayer", 0);
+		  moreControlDiv.index = 1;
+		  carteGMapFP.controls[google.maps.ControlPosition.TOP_RIGHT].push(moreControlDiv);
+		
+};
+
+create_carteGMapFP.prototype.addMarker = function     (donnees){
+		
+			function attachinfowindow(marker, place, i){
+				
+				infowindow[i] = new google.maps.InfoWindow({
+					content: place[4],
+					maxWidth : 400,
+					disableAutoPan : 0
+				});
+				google.maps.event.addListener(marker, 'mouseover', function(e) {
+					infowindow[num_open].close(carteGMapFP,marker);
+					infowindow[i].setZIndex(++infowindowLevel);
+					infowindow[i].open(carteGMapFP,marker);
+					num_open = i;
+				});
+			};
+    for (var i = 0; i < donnees.length; i++) {
+		var place = donnees[i];
+        infos_marqueur = place[9];
+		image_marker = new google.maps.MarkerImage(
+			infos_marqueur[0],
+            new google.maps.Size(markerImage[infos_marqueur[1]].width, markerImage[infos_marqueur[1]].height),
+            new google.maps.Point(0,0),
+            new google.maps.Point(markerImage[infos_marqueur[1]].width/2, markerImage[infos_marqueur[1]].height)
+		);
+	    var shadow_marker = new google.maps.MarkerImage("http://www.google.com/mapfiles/shadow50.png",
+			new google.maps.Size(34, 37),
+			new google.maps.Point(0,0),
+			new google.maps.Point(10, 34));
+		var shape_marker = {
+			coord: [0, 0, markerImage[infos_marqueur[1]].width, markerImage[infos_marqueur[1]].height],
+			type: 'rect'
+		};
+
+        var maLatLng = new google.maps.LatLng(place[1], place[2]);
+		bounds_GMapFP.extend(maLatLng);
+        marker[i] = new google.maps.Marker({
+            map: carteGMapFP,
+            position: maLatLng,
+            title: place[7],
+            icon: image_marker,
+			shadow: shadow_marker,
+			shape: shape_marker,
+            zIndex: place[3]
+        });
+		marker[i].mycategory  = place[8];
+        attachinfowindow(marker[i], place, i);
+    };
+    carteGMapFP.setCenter(bounds_GMapFP.getCenter());
+};
+
+	function initialise_gmapfp() {
+				var maCarteGMapFP= new create_carteGMapFP;
+				maCarteGMapFP.addMarker(places);setTimeout("Hide_Google_link()",1000);
+infowindow[1]=new google.maps.InfoWindow({
+					content: places[0][4],
+					maxWidth : 400,
+					disableAutoPan : 0
+				});
+infowindow[1].open(carteGMapFP,marker[0]);
+			};
+				function Hide_Google_link() {
+				//document.getElementById("map_canvas").childNodes[0].childNodes[1].childNodes[0].style.display = "none";
+				leHtml = document.getElementById("map_canvas").childNodes[0].childNodes[1].innerHTML;
+				leHtml = "" + leHtml + "<a style=\"position: static; overflow-x: visible; overflow-y: visible; float: none; display: inline; \" title=\"GMapFP: Map Component for Joomla\" target=\"_blank\" href=\"http://gmapfp.org\"><div class=\"gmnoprint\" style=\"width: 60px; height: 24px; cursor: pointer; \"><img style=\"position: absolute; left: 0px; top: 24px; -webkit-user-select: none; border-top-width: 0px; border-right-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-style: initial; border-color: initial; border-image: initial; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; width: 60px; height: 24px; \" src=\"http://gmapfp.org/logos/logo_blanc_24x60.png\"></div></a>";
+				document.getElementById("map_canvas").childNodes[0].childNodes[1].innerHTML = leHtml;
+		};
+
+</script>
+<script type="text/javascript">
+places = [
+['',7.4729223360,80.352943240,1000, "<div class='gmapfp_marqueur' style='overflow-y:auto;';><span class='titre'>North Western</span><br /></div>","index6ed0.html?option=com_gmapfp&amp;view=gmapfp&amp;Itemid=407&amp;layout=article&amp;tmpl=component&amp;id=9&amp;lang=en",1, "North Western","",["http://www.google.com/mapfiles/marker.png",1]]
+ ];
+
+</script>
+  <link rel="stylesheet" href="components/com_gmapfp/views/gmapfp/gmapfp_print.css" media="print" type="text/css" />
+  <meta name="ROBOTS" content="NOINDEX,NOFOLLOW"/>
+
+<!--[if lt IE 9]>
+	<script src="/web/media/jui/js/html5.js"></script>
+<![endif]-->
+<script type="text/javascript"></script>
+</head>
+<body class="contentpane modal">
+	<div id="system-message-container">
+	</div>
+
+	<div  id="gmapfp_print" class="gmapfp">
+    	<h1>North Western</h1><br />
+        <h4>(Regional Support Centers)</h4><br />
+		<div>
+			        </div>
+        <table>
+            <tr>
+                <td class="gmapfp_print_taille2">
+             
+             
+             
+             
+             
+             
+                </td>
+                <td>
+             
+             
+             
+             
+             <br />
+                </td>
+			</tr>
+		</table>
+        <br />
+        <span><p><a href="http://waterboard.lk/web/index.php?option=com_content&amp;view=article&amp;id=47&amp;Itemid=207" target="_self">Read more</a></p></span><br /><br />
+        <div style="page-break-before: always;"></div>
+<div>
+	<div id="gmapfp" style="width:100%; height:auto; overflow:hidden;"><div id="map_canvas" style="width:100%; height:500px; background-image:url(http://waterboard.lk/web/components/com_gmapfp/floatbox/graphics/loader_black.gif); background-repeat:no-repeat; background-position:center;"></div></div><script language="javascript" type="text/javascript">
+
+		google.maps.event.addDomListener(window, "load", initialise_map_gmapfp);
+
+		var tstGMapFP = document.getElementById("map_canvas");
+		var tstIntGMapFP;
+			
+		function CheckGMapFP() {
+			if (tstGMapFP) {
+				if (tstGMapFP.offsetWidth != tstGMapFP.getAttribute("oldValue")) {
+					tstGMapFP.setAttribute("oldValue",tstGMapFP.offsetWidth);
+					initialise_gmapfp();
+				}
+			}
+		}
+
+		function initialise_map_gmapfp() {
+		   tstGMapFP.setAttribute("oldValue",0);
+		   tstIntGMapFP = setInterval("CheckGMapFP()",500);
+		}
+   </script></div >
+<div align="center">GMapFP - <a href="http://gmapfp.org/" target="_blank">gmapfp.org</a></div></div>
+
+</body>
+
+<!-- Mirrored from waterboard.lk/web/index.php?option=com_gmapfp&view=gmapfp&tmpl=component&layout=print_article&flag=1&id=9&Itemid=407&lang=en by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 19 Oct 2015 18:11:55 GMT -->
+</html>

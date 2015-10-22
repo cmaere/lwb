@@ -1,0 +1,838 @@
+/*
+ * @version		$Id: yendifvideoshare.css 1.0.0 26-02-2014 $
+ * @package		Yendif Video Share
+ * @copyright   Copyright (C) 2014-2016 Yendif Technologies PVT Ltd
+ * @license     GNU/GPL http://www.gnu.org/licenses/gpl-2.0.html
+*/
+
+/*************************************************************************/
+/*** General ***/
+/*************************************************************************/
+div.yendifVideoShare {
+	width:100%;
+	overflow:hidden;
+}
+div.yendifVideoShare div,
+div.yendifVideoShare form,
+div.yendifVideoShare table,
+div.yendifVideoShare ul,
+div.yendifVideoShare ul li,
+div.yendifVideoShare label,
+div.yendifVideoShare span,
+div.yendifVideoShare input,
+div.yendifVideoShare select,
+div.yendifVideoShare textarea {
+	margin:0px;
+	padding:0px;
+	border:0;
+	font:inherit;
+	font-size:100%;
+	text-align:left;
+	vertical-align:middle;
+	line-height:1.5em;
+}
+div.yendifVideoShare h1,
+div.yendifVideoShare h2 {
+	margin:10px 0px;
+	padding:0px;
+	border:none !important;
+}
+div.yendifVideoShare hr {
+	margin:10px 0 18px 0;
+	height:1px;
+	background:#DDD;
+	border:none;
+}
+div.yendifVideoShare a {
+	margin:0px;
+	padding:0px;
+	border:0;
+	font:inherit;
+	font-size:100%;
+	text-align:left;
+	vertical-align:middle;
+	line-height:1.5em;
+	text-decoration:none;
+}
+div.yendifVideoShare table {
+	width:100%;
+	display:table;
+	table-layout:fixed;
+	border-collapse:separate;
+	border-spacing:1px;
+	border-width:0px;
+}
+div.yendifVideoShare table tr td {
+	padding:7px;
+	background-color:#FFF;
+}
+div.yendifVideoShare table tr,
+div.yendifVideoShare table tr td {
+	border:none;
+}
+div.yendifVideoShare table .row0 {
+	background-color:#FFF;
+}
+div.yendifVideoShare table .row1 {
+	background-color:#F9F9F9;
+}
+div.yendifVideoShare input[type="text"],
+div.yendifVideoShare select,
+div.yendifVideoShare textarea {
+	width:auto;
+	height:auto;
+	margin:0px;
+	padding:5px;
+	border:1px solid #CCC;
+	-webkit-box-shadow:inset 0 0 7px #EEE;
+	-moz-box-shadow:inset 0 0 7px #EEE;
+	box-shadow:inset 0 0 7px #EEE;
+	font-family:inherit;
+	vertical-align:middle;
+	line-height:normal;
+}
+div.yendifVideoShare textarea {
+	min-width:350px;
+	min-height:50px;
+}
+div.yendifVideoShare textarea.yendifDescription {
+	min-height:100px;
+	margin:0px;
+	padding:5px;
+}
+div.yendifVideoShare input.yendifSmall {
+	width:60px;
+}
+div.yendifVideoShare input.yendifMedium {
+	width:200px;
+}
+div.yendifVideoShare input.yendifWide {
+	width:300px;
+}
+div.yendifVideoShare input[type="button"] {
+	cursor:pointer;
+}
+div.yendifVideoShare input[type="button"]:hover {
+	border:1px solid #999;
+}
+div.yendifVideoShare input[type="radio"] {
+	width:16px !important;
+	height:16px !important;
+	margin:0px 3px;
+	padding:0px;
+	vertical-align:middle;
+}
+div.yendifVideoShare input.disabled {
+	display:block;
+	background-color:#FCFCFC;
+	margin-bottom:5px;
+}
+div.yendifVideoShare .yendifSearch input,
+div.yendifVideoShare.yendifSearch input,
+div.yendifVideoShare #yendifSearchInput {
+	display:inline-block !important;
+	margin:0px;
+}
+div.yendifVideoShare select {
+	max-width:225px;
+}
+div.yendifVideoShare .yendifSubmitButton,
+div.yendifVideoShare .yendifResetButton,
+div.yendifVideoShare .yendifNewVideoButton {
+	margin:0px !important;
+	padding:3px 8px;
+	vertical-align:middle;
+	line-height:normal;
+	cursor:pointer;
+}
+div.yendifVideoShare .yendifSubmitButton,
+div.yendifVideoShare .yendifResetButton {
+	margin:0px 3px;
+}
+div.yendifVideoShare .yendifPrimaryButton {
+	display:inline-block;
+	padding:5px 8px;	
+	background:#006dcc;
+	background:-moz-linear-gradient(top,#08c,#0044cc);
+	background:-webkit-gradient(linear,0 0,0 100%,from(#08c),to(#0044cc));
+	background:-webkit-linear-gradient(top,#08c,#0044cc);
+	background:-o-linear-gradient(top,#08c,#0044cc);
+	background:linear-gradient(to bottom,#08c,#0044cc);
+	background-repeat:repeat-x;
+	border:1px solid #0044cc;
+	-webkit-border-radius:4px;
+	-moz-border-radius:4px;
+	border-radius:4px;
+	-webkit-box-shadow:inset 0 1px 0 rgba(255,255,255,.2), 0 1px 2px rgba(0,0,0,.05);
+	-moz-box-shadow:inset 0 1px 0 rgba(255,255,255,.2), 0 1px 2px rgba(0,0,0,.05);
+	box-shadow:inset 0 1px 0 rgba(255,255,255,.2), 0 1px 2px rgba(0,0,0,.05);
+	color:#fff;
+	text-shadow:0 -1px 0 rgba(0,0,0,0.25);
+	vertical-align:middle;
+	overflow:hidden;
+	cursor:pointer;	
+}
+div.yendifVideoShare .yendifPrimaryButton:hover,
+div.yendifVideoShare .yendifPrimaryButton:focus,
+div.yendifVideoShare .yendifPrimaryButton:active {
+	color:#fff;
+	background:#0044cc;
+}
+div.yendifVideoShare .yendifList {
+	padding-left:25px;
+	list-style-type:circle;
+}
+div.yendifVideoShare label.yendifLabel {
+	float:none;
+	display:inline-block;
+	width:inherit;
+	min-width:inherit;
+	margin:2px 7px 2px 2px;
+	vertical-align:middle;
+}
+div.yendifVideoShare label.yendifLabel span {
+	vertical-align:middle;
+}
+div.yendifVideoShare .left {
+	float:left;
+}
+div.yendifVideoShare .right {
+	float:right;
+}
+div.yendifVideoShare .clear,
+div.yendifVideoShare .clearBoth {
+	clear:both;
+}
+div.yendifVideoShare .center {
+	text-align:center;
+}
+div.yendifVideoShare .padLeft {
+	text-align:left;
+	padding-left:10px;
+}
+div.yendifVideoShare .divider {
+	height:1px;
+	border-bottom:1px solid #CCC;
+}
+div.yendifVideoShare .spacer {
+	height:10px;
+}
+div.yendifVideoShare .noitem {
+	display:block;
+	padding:5px;
+	color:#999;
+	text-align:center;
+}
+div.yendifVideoShare .mandatory {
+	color:#FF9900 !important;
+	font-weight:bold;
+	padding-left:5px;
+}
+div.yendifVideoShare .invalid {
+	border:1px solid #FF0000 !important;
+	color:inherit !important;
+	font-weight:normal !important;
+}
+div.yendifVideoShare label.invalid,
+div.yendifVideoShare label.invalid a {
+	border:none !important;
+	color:#FF0000 !important;
+}
+div.yendifVideoShare .yendifLeftCol {
+	float:left;
+	width:55%;
+}
+div.yendifVideoShare .yendifRightCol {
+	float:right;
+	width:44%;
+}
+
+/*************************************************************************/
+/*** Rating ***/
+/*************************************************************************/
+.yendifRating,
+.yendifRatingSmall {
+	margin:0;
+	padding:0;	
+}
+
+.yendifRatingStars {
+	position:relative;
+    margin:0 !important;
+    padding:0 !important;   
+    vertical-align:middle;
+}
+
+.yendifRatingInfo {
+	position:relative;
+    margin:0 !important;
+    padding:0 0 0 10px !important;   
+    vertical-align:middle;
+}
+
+.yendifRatingStars {
+    display:inline-block;
+}
+
+.yendifRatingStars,
+.yendifRatingStars .yendifCurrentRating,
+.yendifRatingStar a,
+.yendifRatingInfo {
+    height:22px;
+    line-height:22px;
+}
+
+.yendifRatingStars {
+	width:110px;
+    font-size:1em;
+    overflow:hidden;   
+}
+
+.yendifRatingInfo {
+    font-size:.78em;
+}
+
+.yendifRatingSmall .yendifRatingStars,
+.yendifRatingSmall .yendifRatingStars .yendifCurrentRating,
+.yendifRatingSmall .yendifRatingStar a,
+.yendifRatingSmall .yendifRatingInfo {
+    height:17px;
+    line-height:17px;
+}
+
+.yendifRatingSmall .yendifRatingStars {
+    width:85px;
+}
+
+.yendifRatingStar {
+	display:inline;
+    background-position:0 !important;
+    background-image:none;    
+    margin:0 !important;
+    padding:0 !important;
+}
+
+.yendifRatingStars,
+.yendifRatingStar a:hover,
+.yendifRatingStars .yendifCurrentRating {
+    background-image:url(../images/star.png) !important;
+    background-color:transparent !important;
+    background-repeat:repeat-x !important;
+}
+
+.yendifRatingStars .yendifCurrentRating,
+.yendifRatingStar a:hover {
+    background-position:left -1000px;
+}
+
+.yendifRatingSmall .yendifRatingStars,
+.yendifRatingSmall .yendifRatingStars .yendifCurrentRating,
+.yendifRatingSmall .yendifRatingStar a:hover {
+    background-image:url(../images/star_small.png) !important;
+}
+
+.yendifRatingStars .yendifCurrentRating,
+.yendifRatingStar a {
+	position:absolute;    
+    top:0;
+    left:0;    
+	border:medium none;
+    text-indent:-1000em!important;
+    outline:none;
+    overflow:hidden;
+	cursor:pointer;
+}
+
+.yendifRatingStar a:hover {
+    background-position:left bottom !important;
+}
+
+.yendifRatingStar a:focus,
+.yendifRatingStar a:active {
+    background:none !important;
+}
+
+.yendifRatingStars .yendifCurrentRating {
+    background-position:left center;
+    z-index:1;
+}
+
+.yendifRatingStar a {
+    margin:0;
+    padding:0;
+}
+
+.yendifRatingStar a.yendifStar5 {
+    width:10%;
+    z-index:12;
+}
+
+.yendifRatingStar a.yendifStar10 {
+    width:20%;
+    z-index:11;
+}
+
+.yendifRatingStar a.yendifStar15 {
+    width:30%;
+    z-index:10;
+}
+
+.yendifRatingStar a.yendifStar20 {
+    width:40%;
+    z-index:9;
+}
+
+.yendifRatingStar a.yendifStar25 {
+    width:50%;
+    z-index:8;
+}
+
+.yendifRatingStar a.yendifStar30 {
+    width:60%;
+    z-index:7;
+}
+
+.yendifRatingStar a.yendifStar35 {
+    width:70%;
+    z-index:6;
+}
+
+.yendifRatingStar a.yendifStar40 {
+    width:80%;
+    z-index:5;
+}
+
+.yendifRatingStar a.yendifStar45 {
+    width:90%;
+    z-index:4;
+}
+
+.yendifRatingStar a.yendifStar50 {
+    width:100%;
+    z-index:3;
+}
+
+/*************************************************************************/
+/*** Gallery Page ***/
+/*************************************************************************/
+div.yendifGallery a.yendifItem {
+	float:left;
+	margin:7px;
+	padding:0px;
+	vertical-align:top;
+}
+
+div.yendifGallery a.yendifItem,
+div.yendifGallery a.yendifItem:hover,
+div.yendifGallery a.yendifItem:active,
+div.yendifGallery a.yendifItem:focus {
+	background:transparent !important;
+	background-color:transparent !important;
+	color:inherit !important;
+	text-decoration:none !important;	
+}
+
+div.yendifGallery a.yendifItem span {
+	display:block;
+}
+
+div.yendifGallery a.yendifItem .yendifThumb {
+	position:relative;
+	background-color:#EEE;
+}
+
+div.yendifGallery a.yendifItem .yendifThumbClip {
+	position:absolute;
+	width:auto;
+	max-width:100%;
+	height:auto;
+	max-height:100%;
+	margin:auto;
+	top:0;
+	right:0;
+	bottom:0;
+	left:0;
+	z-index:1;
+}
+
+div.yendifGallery a.yendifItem .yendifThumbOverlay {
+	position:absolute;
+	width:32px;
+	height:32px;
+	margin:-15px 0px 0px -15px;
+	padding:0px;
+	top:50%;
+	left:50%;
+	z-index:2;
+}
+
+div.yendifGallery a.yendifItem span.yendifDuration {
+	position:absolute;
+	padding:2px 5px;
+	right:0;
+	bottom:0;
+	background-color:#666;
+	color:#FFF;
+	font-size:11px;
+	z-index:3;
+}
+
+div.yendifGallery a.yendifItem .yendifTitle {
+	margin:5px 0px 0px 0px;
+	padding:0px 0px 0px 3px;
+	font-size:12px;
+	font-weight:bold;
+	word-wrap:break-word;
+}
+
+div.yendifGallery a.yendifItem .yendifViews {
+	margin:0px;
+	padding:2px 3px;
+	font-style:italic;
+	color:#999;
+}
+
+div.yendifGallery a.yendifMore {
+	background:#EEE !important;
+	font-size:20px;
+	color:#666 !important;
+	text-align:center;
+	text-shadow:1px 1px 1px #FFF;	
+}
+
+div.yendifGallery a.yendifMore:hover {
+	background:#EEE !important;
+	color:#08C !important;
+}
+
+/*************************************************************************/
+/*** Pagination ***/
+/*************************************************************************/
+#yendifPagination {
+	clear:both;
+	display:inline-block;
+	margin:15px 0px 0px 0px;
+	padding:0px;
+}
+#yendifPagination .pagination span,
+#yendifPagination .pagination a,
+#yendifPagination ul li {
+	margin:0px 2px !important;
+	padding:3px 7px !important;
+	border:1px solid #ddd !important;
+	text-align:center !important;
+	font-size:12px !important;
+}
+#yendifPagination ul {
+	margin:0px !important;
+	padding:0px !important;
+	list-style-type:none !important;
+}
+#yendifPagination ul li {
+	float:left !important;
+	line-height:16px !important;
+}
+#yendifPagination ul li a {
+	text-decoration:none !important;
+}
+
+/*************************************************************************/
+/*** Video Page ***/
+/*************************************************************************/
+div.yendifVideoShare .yendifBlock {
+	margin:10px 0px;
+	padding:0px;
+	color:#777;
+}
+div.yendifVideoShare .yendifBlock span {
+	vertical-align:middle;
+}
+div.yendifVideoShare .yendifBlock .yendifSocialShare {
+    float:left;
+	padding:6px 0px;
+	width:50%;
+}
+div.yendifVideoShare .yendifBlock .yendifSearch {
+	float:right;
+}
+div.yendifVideoShare .yendifBlock .yendifUserName {
+	margin:0 0 0 10px;
+}
+div.yendifVideoShare .yendifBlock .yendifUserName,
+div.yendifVideoShare .yendifBlock .yendifDateAdded {	
+	color:#999;
+}
+div.yendifVideoShare .yendifBlock .yendifCategoryName,
+div.yendifVideoShare .yendifBlock .yendifViews,
+div.yendifVideoShare .yendifBlock .yendifUserName,
+div.yendifVideoShare .yendifBlock .yendifDateAdded {
+	height:17px;
+}
+div.yendifVideoShare .yendifBlock span.yendifAjaxSpinner {
+	display:block;
+	background:url('../images/spinner.gif') no-repeat center center;
+	width:16px;
+	height:16px;
+	margin:0;
+	padding:0;
+}
+div.yendifVideoShare .yendifDescription {
+	margin:10px 0px;
+	padding:0px;
+}
+
+/*************************************************************************/
+/*** No Permission layer - Video Player ***/
+/*************************************************************************/
+.yendifNoPerm {
+	position:relative !important;
+	width:100% !important;
+	height:0 !important;
+	padding-bottom:56.25% !important;
+}
+
+.yendifNoPerm img.yendifNoPermImg {
+	position:absolute;
+	width:auto;
+	max-width:100%;
+	height:auto;
+	max-height:100%;
+	margin:auto;
+	top:0;
+	right:0;
+	bottom:0;
+	left:0;
+	z-index:1;
+}
+
+.yendifNoPerm span.yendifNoPermOverlay {
+	position:absolute;
+	background-color:#000;
+	width:100%;
+	height:100%;
+	-moz-opacity:0.3;
+	-khtml-opacity:0.3;
+	-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=30)";
+	filter:alpha(opacity=30);
+	opacity:0.3;
+	z-index:2;
+}
+
+.yendifNoPerm span.yendifNoPermContent {
+	position:absolute;
+	width:100%;
+	height:50px;
+	margin:auto;
+	padding:0;
+	top:0;
+	right:0;
+	bottom:0;
+	left:0;
+	background-color:#333333;
+	color:#EEE;
+	text-align:center;
+	font-size:18px;
+	line-height:50px;
+	z-index:3;
+}
+
+/*************************************************************************/
+/*** Search Page ***/
+/*************************************************************************/
+h1.yendifSearch {
+	margin:0 0 20px 0;
+	padding:0;
+}
+
+/*************************************************************************/
+/*** User Page ***/
+/*************************************************************************/
+div.yendifVideoShare h1.yendifFormHeading {
+	margin:0 0 20px 0;
+	padding:0;
+	border-bottom:1px solid #DDD !important;
+}
+div.yendifVideoShare .yendifTableFilters {
+	margin:15px 0px;
+}
+div.yendifVideoShare .yendifTableFiltersNavigation {
+	float:right;
+}
+div.yendifVideoShare table.yendifTableFilters tr td,
+div.yendifVideoShare table.mceLayout tr td {
+	padding:0px;
+}
+div.yendifVideoShare table.yendifTableList thead tr th {
+	padding:7px 10px;
+	background-color:#666;
+	border-bottom:1px solid #FFF;
+	color:#FFF;
+}
+div.yendifVideoShare table.yendifTableList tfoot .yendifPagination .list-footer {
+	display:inline-block;
+}
+div.yendifVideoShare table.yendifTable td.yendifKey {
+	width:150px;
+	padding:5px 10px 5px 0px;
+	text-align:left;
+	font-weight:normal;
+	line-height:normal;
+}
+div.yendifVideoShare .yendifSubmitWrapper {
+	margin:20px 0 0 170px;
+}
+div.yendifVideoShare a.yendifEditButton,
+div.yendifVideoShare a.yendifDeleteButton,
+div.yendifVideoShare a.yendifPreviewButton {
+	display:inline-block;
+}
+
+/*************************************************************************/
+/*** Ajax Upload ***/
+/*************************************************************************/
+div.yendifVideoShare .yendifAjaxUploadForm {
+	margin:0px;
+}
+
+div.yendifVideoShare input.yendifFileInput {
+	float:left !important;
+}
+
+div.yendifVideoShare .yendifSplitter {
+	float:left;
+	display:inline-block;
+	width:1px;
+	height:20px;
+	margin:5px;
+	padding:0;
+	background:#DDD;
+}
+
+div.yendifVideoShare .yendifMediaUploader {
+	float:left;
+	position:relative;
+	display:inline-block;
+	width:98px;
+	height:25px;
+	margin:0px;
+	padding:0px;
+	top:0;
+	left:0;
+	right:0;
+	bottom:0;
+	color:#fff;
+	background:#5bb75b;
+	background:-moz-linear-gradient(top,#62c462,#51a351);
+	background:-webkit-gradient(linear,0 0,0 100%,from(#62c462),to(#51a351));
+	background:-webkit-linear-gradient(top,#62c462,#51a351);
+	background:-o-linear-gradient(top,#62c462,#51a351);
+	background:linear-gradient(to bottom,#62c462,#51a351);
+	background-repeat:repeat-x;
+	border:1px solid #387038;
+	-webkit-border-radius:4px;
+	-moz-border-radius:4px;
+	border-radius:4px;
+	-webkit-box-shadow:inset 0 1px 0 rgba(255,255,255,.2), 0 1px 2px rgba(0,0,0,.05);
+	-moz-box-shadow:inset 0 1px 0 rgba(255,255,255,.2), 0 1px 2px rgba(0,0,0,.05);
+	box-shadow:inset 0 1px 0 rgba(255,255,255,.2), 0 1px 2px rgba(0,0,0,.05);	
+	vertical-align:middle;
+	overflow:hidden;
+	cursor:pointer;
+}
+
+div.yendifVideoShare .yendifMediaUploader:hover {
+	color:#fff;
+	background:#51a351;
+}
+
+div.yendifVideoShare .yendifMediaUploader span {
+	display:block;	
+	font-size:12px;
+	text-align:center;	
+	text-shadow:0 -1px 0 rgba(0,0,0,0.25);
+	line-height:25px;	
+}
+
+div.yendifVideoShare .yendifMediaUploader .yendifFileHidden {
+	position:absolute;
+	top:0px;
+	right:0;
+	font-size:120px;
+	opacity:0;
+	filter:alpha(opacity=0);
+	-ms-filter:"alpha(opacity=0)";
+	-khtml-opacity:0;
+	-moz-opacity:0;
+	cursor:pointer;
+}
+
+div.yendifVideoShare .yendifAjaxResponse {
+	display:inline-block;
+	float:left;
+}
+
+div.yendifVideoShare .yendifUploading,
+div.yendifVideoShare .yendifUploadSuccess,
+div.yendifVideoShare .yendifUploadFailure {
+	display:inline-block;
+	width:250px;
+	height:26px;
+	margin:5px;
+	padding:0 0 0 24px;
+	font-size:12px;
+	font-style:italic;
+}
+
+div.yendifVideoShare .yendifUploading {
+	background:url('../images/spinner.gif') no-repeat;
+}
+
+div.yendifVideoShare .yendifUploadSuccess {
+	background:url('../images/tick.png') no-repeat;
+}
+
+div.yendifVideoShare .yendifUploadFailure {
+	background:url('../images/publish_x.png') no-repeat;
+}
+
+div.yendifVideoShare .yendifUploading a,
+div.yendifVideoShare .yendifUploadSuccess a,
+div.yendifVideoShare .yendifUploadFailure a {
+	padding-left:10px;
+	color:#08C;
+	text-decoration:underline;
+}
+
+/*************************************************************************/
+/*** Player Overrides ***/
+/*************************************************************************/
+div.yendifVideoShare .yendifplayer a {
+	line-height:1em;
+}
+
+.yendifplayer ul {
+	margin:0 !important;
+	padding:0 !important;
+}
+
+#main .yendifplayer p {
+	line-height:inherit;
+}
+
+div.yendifVideoShare .yendifplayer .yf-playlist a {
+	padding:0 !important;
+}
+
+#main .yendifplayer.black .yf-playlist a:hover,
+#main .yendifplayer.black .yf-playlist a.active {
+	background-color:#333;
+}
+
+#main .yendifplayer.white .yf-playlist a:hover,
+#main .yendifplayer.white .yf-playlist a.active {
+	background-color:#EEE;
+}
+
+div.yendifVideoShare .yendifplayer .yf-error span {
+	text-align:center;
+}

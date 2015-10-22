@@ -1,0 +1,325 @@
+/*Responsive*/
+
+/*@media only screen and (min-width : 1025px) {
+ 
+}
+ @media only screen and (max-width : 1024px) {
+ 
+}*/
+ #slimmenu{
+	display:none;
+}
+ #ddmenu div.menu-icon { display:none; /*hide menu icon initially*/ } /*styles for mobile*/ 
+
+@media screen and (max-width: 950px) {
+	.header-inner,
+	.main_wrap,
+	.col1,
+	.col2,
+	.quick-rel .col3,
+	.col4{
+		width:100%;	
+	}
+	#maximenuck{
+	 display:none !important;	
+	}
+	#topmenu,
+	.align{
+	position:initial;	
+	}
+	.header{
+		background:#fff;	
+	}
+	
+	.lang {
+		float: left;
+		margin-bottom: 10px;
+		text-align: right;
+		position:inherit;
+	}
+	 #slimmenu{
+	display:inherit;
+	}	
+	
+	.ticker{
+		width:100% !important;	
+	}
+	.ser-cars .nav-child{
+		display:block !important;
+		position:inherit;	
+	}
+	.quick-rel .col3 ul li {
+    min-width: 91%;
+	}
+	.gicbaner,
+	.visit,
+	.visit .digitstype{
+		position:initial;
+		text-align:center;
+	}
+	.infoter {
+    font-size: 90%;
+    text-align: center;
+	}
+	.lof-articlessroller .lof-inner a,
+	.dis,
+	.lof-articlessroller .lof-inner .lof-readmore {
+		text-align: center;
+	 }
+	 .lof-readmore{
+			float:none; 
+	 }
+	 .owl-item .item img {
+		 max-width: 100%;
+		 width: 100%;
+	}
+	.item-page{
+		margin-top:24px;
+	}	
+	.item-page h2{
+		line-height: 26px;
+		font-size: 171%;
+	}
+	.item-page table td {
+    padding-bottom: 10px;
+ 	}
+	.social-m{
+    position:inherit;
+	background:#0952A0;
+	padding:10px 0;	
+	right:0;
+	}
+	
+	#breadcrumbs ul{
+		margin:0;
+		padding:10px 0;	
+	}
+	.item-page .pdf li{
+		width:37%;	
+	}
+	.vision{
+		width:99%;
+		margin-bottom:10px;
+	}
+	.mission{
+		width:99%;
+	}
+.footer1 {
+    position: relative;
+    left: inherit;
+    top: inherit;
+}}
+
+
+@media screen and (max-width: 768px) {
+	.header-inner,
+	.main_wrap,
+	.col1,
+	.col2,
+	.quick-rel .col3,
+	.col4{
+		width:100%;	
+	}
+	#maximenuck{
+	 display:none !important;	
+	}
+	#topmenu,
+	.align{
+	position:initial;	
+	}
+	.header{
+		background:#fff;	
+	}
+	
+	.lang {
+		float: left;
+		margin-bottom: 10px;
+		text-align: right;
+	}
+	 #slimmenu{
+	display:inherit;
+	}	
+	
+	.ticker{
+		width:100% !important;	
+	}
+	.ser-cars .nav-child{
+		display:block !important;
+		position:inherit;	
+	}
+	.quick-rel .col3 ul li {
+    min-width: 91%;
+	}
+	.gicbaner,
+	.visit,
+	.visit .digitstype{
+		position:initial;
+		text-align:center;
+	}
+	.infoter {
+    font-size: 90%;
+    text-align: center;
+	}
+	.lof-articlessroller .lof-inner a,
+	.dis,
+	.lof-articlessroller .lof-inner .lof-readmore {
+		text-align: center;
+	 }
+	 .lof-readmore{
+			float:none; 
+	 }
+	 .owl-item .item img{
+		 max-width: 100%;
+		 width: 100%;
+	}
+	.item-page{
+		margin-top:24px;
+	}	
+	
+	.item-page h2{
+		line-height: 26px;
+		font-size: 171%;
+	}
+	.item-page table td {
+    padding-bottom: 10px;
+ 	}
+	.social-m{
+    position:inherit;
+	background:#0952A0;
+	padding:10px 0;	
+	right:0;
+	}
+	
+	#breadcrumbs ul{
+		margin:0;
+		padding:10px 0;	
+	}
+	
+	.item-page .pdf li{
+		width:89%;	
+	}
+		.vision{
+		width:99%;
+		margin-bottom:10px;
+	}
+	.mission{
+		width:99%;
+	}
+
+.footer1 {
+    position: relative;
+    left: inherit;
+    top: inherit;
+}}
+@media screen and (max-width: 650px) {
+	.header-inner,
+	.main_wrap,
+	.col1,
+	.col2,
+	.quick-rel .col3,
+	.col4{
+		width:100%;	
+	}
+	#maximenuck{
+	 display:none !important;	
+	}
+	#topmenu,
+	.align{
+	position:initial;	
+	}
+	.header{
+		background:#fff;	
+	}
+	
+	.lang {
+		float: left;
+		margin-bottom: 10px;
+		text-align: right;
+		position:inherit;
+	}
+	 #slimmenu{
+	display:inherit;
+	}	
+	
+	.ticker{
+		width:100% !important;	
+	}
+	.ser-cars .nav-child{
+		display:block !important;
+		position:inherit;	
+	}
+	.quick-rel .col3 ul li {
+    min-width: 91%;
+	}
+	.gicbaner,
+	.visit,
+	.visit .digitstype{
+		position:initial;
+		text-align:center;
+	}
+	.infoter {
+    font-size: 90%;
+    text-align: center;
+	}
+	.lof-articlessroller .lof-inner a,
+	.dis,
+	.lof-articlessroller .lof-inner .lof-readmore {
+		text-align: center;
+	 }
+	 .lof-readmore,
+	 .moduletableblue .lof-readmore{
+			float:none; 
+	 }
+	 
+ .owl-item .item img{
+		 max-width: 100%;
+		 width: 100%;
+	}
+	
+	.item-page{
+		margin-top:24px;
+	}	
+	
+	.item-page h2{
+		line-height: 26px;
+		font-size: 171%;
+	}
+	.item-page table td {
+    padding-bottom: 10px;
+ 	}
+	.social-m{
+    position:inherit;
+	background:#0952A0;
+	padding:10px 0;	
+	right:0;
+	}
+	
+	#breadcrumbs ul{
+		margin:0;
+		padding:10px 0;	
+	}
+	.item-page .pdf li{
+		width:78%;	
+	}
+	.vision{
+		width:99%;
+		margin-bottom:10px;
+	}
+	.mission{
+		width:99%;
+	}
+
+.footer1 {
+    position: relative;
+    left: inherit;
+    top: inherit;
+}
+.header-inner,
+.main_wrap{
+	width:100%;	
+}
+
+}
+ 
+	
+/*Responsive end*/
