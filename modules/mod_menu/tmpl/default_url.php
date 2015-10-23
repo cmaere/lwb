@@ -28,5 +28,5 @@ $flink = $item->flink;
 $flink = JFilterOutput::ampReplace(htmlspecialchars($flink));
 ?>
 <a class="maximenuck " href="#">
-	<span class="titreck"><?php echo $linktype; ?></span>
+	<span class="titreck"><?php echo $item->title; ?></span>
 </a>

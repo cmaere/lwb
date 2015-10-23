@@ -42,6 +42,39 @@
 		<position>position-12</position>
 		<position>position-13</position>
 		<position>position-14</position>
+		<position>cha-mainmenu-item1-position-1</position>
+		<position>cha-mainmenu-item1-position-2</position>
+		<position>cha-mainmenu-item1-position-3</position>
+		<position>cha-mainmenu-item2-position-1</position>
+		<position>cha-mainmenu-item2-position-2</position>
+		<position>cha-mainmenu-item2-position-3</position>
+		<position>cha-mainmenu-item3-position-1</position>
+		<position>cha-mainmenu-item3-position-2</position>
+		<position>cha-mainmenu-item3-position-3</position>
+		<position>cha-mainmenu-item4-position-1</position>
+		<position>cha-mainmenu-item4-position-2</position>
+		<position>cha-mainmenu-item4-position-3</position>
+		<position>cha-mainmenu-item5-position-1</position>
+		<position>cha-mainmenu-item5-position-2</position>
+		<position>cha-mainmenu-item5-position-3</position>
+		<position>cha-mainmenu-item5-position-1</position>
+		<position>cha-mainmenu-item5-position-2</position>
+		<position>cha-mainmenu-item5-position-3</position>
+		<position>cha-mainmenu-item6-position-1</position>
+		<position>cha-mainmenu-item6-position-2</position>
+		<position>cha-mainmenu-item6-position-3</position>
+		<position>cha-mainmenu-item7-position-1</position>
+		<position>cha-mainmenu-item7-position-2</position>
+		<position>cha-mainmenu-item7-position-3</position>
+		<position>cha-mainmenu-item8-position-1</position>
+		<position>cha-mainmenu-item8-position-2</position>
+		<position>cha-mainmenu-item8-position-3</position>
+		<position>cha-mainmenu-item9-position-1</position>
+		<position>cha-mainmenu-item9-position-2</position>
+		<position>cha-mainmenu-item9-position-3</position>
+		<position>cha-mainmenu-item10-position-1</position>
+		<position>cha-mainmenu-item10-position-2</position>
+		<position>cha-mainmenu-item10-position-3</position>
 		<position>footer</position>
 	</positions>
 	<languages folder="language">
