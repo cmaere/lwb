@@ -79,7 +79,7 @@ foreach ($list as $i => &$item)
 			</div>
 			<div class="maxidrop-main" style="width:auto;height:266px;">
 				<div class="maxidrop-main2">
-					
+					<!-- position 1 for submenu-->
 					
 					<?php 
 					$cha_position = "cha-mainmenu-item".$y."-position-1";
@@ -137,74 +137,51 @@ foreach ($list as $i => &$item)
 						</ul>
 						<div class="clr"></div>
 					</div>
+					
+					
+					<!-- position 2 for submenu-->
+					
+					<?php 
+					$cha_position = "cha-mainmenu-item".$y."-position-2";
+					//echo $y;
+					if ($cha->countModules($cha_position)) : ?>
+					
 					<div class="maximenuck2"  style="width:220px;float:left;">
-						<ul class="maximenuck2">
-							<li data-level="2" class="maximenuck nodropdown item132 level2  fullwidth" style="z-index : 11992;position:static;">
-								<a class="maximenuck " href="#">
-									<span class="titreck">Strength &amp; Technical Capabilities</span>
-								</a>
-							</li>
-							<li data-level="2" class="maximenuck nodropdown item264 level2  fullwidth" style="z-index : 11991;position:static;">
-								<a class="maximenuck " href="#">
-									<img src="<?php echo $cha_base . 'templates/' . $cha_tmpl ;  ?>/images/powered_by.png" alt="Contact Details"/>
-								</a>
-							</li>
-							<li data-level="2" class="maximenuck nodropdown item320 level2  fullwidth" style="z-index : 11990;position:static;">
-								<a class="maximenuck " href="#">
-									<img src="<?php echo $cha_base . 'templates/' . $cha_tmpl ;  ?>/images/feedback.png" alt="Feedback"/>
-								</a>
-							</li>
-							<li data-level="2" class="maximenuck nodropdown item265 level2  fullwidth" style="z-index : 11989;position:static;">
-								<a class="maximenuck " href="index8b6c.html?option=com_content&amp;view=article&amp;id=115&amp;Itemid=265&amp;lang=en">
-									<img src="<?php echo $cha_base . 'templates/' . $cha_tmpl ;  ?>/images/icon/1939-large.gif" alt="1939 Call us"/>
-								</a>
-							</li>
 						
-															
-
-		
-		
-		
-							</ul>
+						<?php
+						          
+						          $modules =& JModuleHelper::getModules($cha_position);
+						          foreach ($modules as $module){
+						             echo JModuleHelper::renderModule($module);
+						          }
+						          ?>
+						
+						
 							<div class="clr"></div>
 						</div>
+						
+						<?php endif; ?>
+						
+						<?php 
+						$cha_position = "cha-mainmenu-item".$y."-position-3";
+						//echo $y;
+						if ($cha->countModules($cha_position)) : ?>
+						
 						<div class="maximenuck2"  style="width:258px;float:left;">
-							<ul class="maximenuck2"><li data-level="2" class="maximenuck maximenuckmodule nodropdown item133 last level2 ">
-								<div class="maximenuck_mod">
-									<div class="moduletable">
-										<h3>Ministry</h3>
-										<div class="custom"  >
-											<table>
-												<tbody>
-													<tr>
-														<td style="padding-bottom: 11px; padding-top: 3px;">
-															<a href="#">
-																<img src="<?php echo $cha_base . 'templates/' . $cha_tmpl ;  ?>/images/minister.png" alt="minister" />
-															</a>
-														</td>
-													</tr>
-													<tr>
-														<td style="padding-bottom: 11px; padding-top: 3px;">
-															<a href="#">
-																<img src="<?php echo $cha_base . 'templates/' . $cha_tmpl ;  ?>/images/stateministryEng.png" alt="stateministryEng" />
-															</a>
-														</td>
-													</tr>
-													<tr>
-														<td style="padding-bottom: 9px; padding-top: 3px;">
-															<img src="<?php echo $cha_base . 'templates/' . $cha_tmpl ;  ?>/images/SecBusnayakeEng.png" alt="SecBusnayakeEng" />
-														</td>
-													</tr>
-												</tbody>
-											</table>
-										</div>
-									</div>
-									<div class="clr"></div>
-								</div>
-							</li>
-						</ul>
+							
+							<?php
+						          
+							          $modules =& JModuleHelper::getModules($cha_position);
+							          foreach ($modules as $module){
+							             echo JModuleHelper::renderModule($module);
+							          }
+							          ?>
+							
+							
+							
 						<div class="clr"></div>
 					</div>
+					<?php endif; ?>
 					<div class="clr"></div>
 				</div>
 			</div>
