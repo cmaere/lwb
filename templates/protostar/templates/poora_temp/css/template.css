@@ -672,9 +672,9 @@ ol ol,
 ol ul {
 	margin-bottom: 0;
 }
-li {
-	line-height: 18px;
-}
+
+
+
 ul.unstyled,
 ol.unstyled {
 	margin-left: 0;
@@ -7431,7 +7431,10 @@ code {
 .jevdateicon  span,
 div#maximenuck ul.maximenuck li.maximenuck.level1 ul.maximenuck2 li .jevdateicon  span{
 	color:#fff !important;
-	text-shadow:none!important
+	text-shadow:none!important;
+	
+	
+	
 }
 div#maximenuck ul.maximenuck li.maximenuck.level1 ul.maximenuck2 li .jevdateicon  span:hover{
 	color:#ee7575 !important;

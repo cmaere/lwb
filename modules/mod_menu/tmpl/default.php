@@ -168,7 +168,7 @@ foreach ($list as $i => &$item)
 						if ($cha->countModules($cha_position)) : ?>
 						
 						<div class="maximenuck2"  style="width:258px;float:left;">
-							
+								
 							<?php
 						          
 							          $modules =& JModuleHelper::getModules($cha_position);

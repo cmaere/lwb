@@ -12,6 +12,7 @@ defined('_JEXEC') or die;
 $app             = JFactory::getApplication();
 $doc             = JFactory::getDocument();
 $user            = JFactory::getUser();
+$menu 		 = $app->getMenu();
 $this->language  = $doc->language;
 $this->direction = $doc->direction;
 
@@ -545,7 +546,7 @@ div#maximenuck ul.maximenuck2 li.maximenuck.item363.level2{ padding-top: 5px !im
 	  
 	  
 	  
-	  
+<!-- main menu-->	  
 	  
 <div class="main_wrap">
 	<div class="main-nav">
@@ -565,7 +566,7 @@ div#maximenuck ul.maximenuck2 li.maximenuck.item363.level2{ padding-top: 5px !im
         <div style="clear:both;"></div>
     </div>
     
-    
+ <!-- end main menu-->	   
     
     <!-- fin maximenuCK -->
 
@@ -579,6 +580,9 @@ div#maximenuck ul.maximenuck2 li.maximenuck.item363.level2{ padding-top: 5px !im
                     </div>
 				                
     </div>
+    
+    
+    
     
     <div class="news-head">
 				                    <div id="aside">
@@ -598,75 +602,37 @@ div#maximenuck ul.maximenuck2 li.maximenuck.item363.level2{ padding-top: 5px !im
 				    
     </div>
     
+    
+    
+
+    
     <div class="banner-area">
 				 
     	<div class="col1">
        
      		                      <div id="aside">
+<?php if ($this->countModules('position-8')) : ?>    					      
+					   
                         <div class="moduletablered">
  <h3>Important Notices</h3> <div id="lofasc-90" class="lof-articlessroller" style="height:160px; width:auto">
 <div class=" lof-vertical lof-container ">
 
 
  <!-- MAIN CONTENT of ARTICLESCROLLER MODULE --> 
-  <div class="lof-main-wapper" style="height:160px;width:auto">
- 		  		<div class="lof-main-item page-1">
-        		        		 <div class="lof-row" style="width:99.9%">
-                   <div class="lof-inner" style="height:auto">
-    
-           
-     <a class="lof-title" target="_parent" title="CALL FOR PAPERS FOR THE RESEARCH SYMPOSIUM  2016 " href="index9947.html?option=com_content&amp;view=article&amp;id=218:call-for-papers-for-the-research-symposium-2017&amp;catid=8:interruption-notices&amp;Itemid=197&amp;lang=en">
-      <div class="blIm">
-     <img class="block" src="modules/mod_lofarticlescroller/assets/images/notice.png"   alt=""/>
-      </div>  CALL FOR PAPERS FOR ...     </a>
-           
-     
-	<div class="dis">National Water Supply &amp; Drainage Board will arrange a research symposium...</div>
-<hr>
-          <a target="_parent" class="lof-readmore" title="CALL FOR PAPERS FOR THE RESEARCH SYMPOSIUM  2016 " href="index9947.html?option=com_content&amp;view=article&amp;id=218:call-for-papers-for-the-research-symposium-2017&amp;catid=8:interruption-notices&amp;Itemid=197&amp;lang=en">
-        Read more      </a>
-    </div>				</div>      
-                       
-                        </div> 
-   		  		<div class="lof-main-item page-2">
-        		        		 <div class="lof-row" style="width:99.9%">
-                   <div class="lof-inner" style="height:auto">
-    
-           
-     <a class="lof-title" target="_parent" title="  WATER TANK AT BERUWALA FOR NWS & DB, UNDER  JICA ASSISTANCE. " href="indexb4c9.html?option=com_content&amp;view=article&amp;id=221:water-tank-at-beruwala-for-nws-db-under-jica-assistance-2&amp;catid=8:interruption-notices&amp;Itemid=197&amp;lang=en">
-      <div class="blIm">
-     <img class="block" src="modules/mod_lofarticlescroller/assets/images/notice.png"   alt=""/>
-      </div>    WATER TANK AT BERU...     </a>
-           
-     
-	<div class="dis">A LEADING JAPANEESE CONSTRCTION COMPANY CONSTRUCTS A 2000m3 CAPACITY AND 10M...</div>
-<hr>
-          <a target="_parent" class="lof-readmore" title="  WATER TANK AT BERUWALA FOR NWS & DB, UNDER  JICA ASSISTANCE. " href="indexb4c9.html?option=com_content&amp;view=article&amp;id=221:water-tank-at-beruwala-for-nws-db-under-jica-assistance-2&amp;catid=8:interruption-notices&amp;Itemid=197&amp;lang=en">
-        Read more      </a>
-    </div>				</div>      
-                       
-                        </div> 
-   		  		<div class="lof-main-item page-3">
-        		        		 <div class="lof-row" style="width:99.9%">
-                   <div class="lof-inner" style="height:auto">
-    
-           
-     <a class="lof-title" target="_parent" title=" Workshop on New Investment Strategies & Business Models for the NWSDB" href="index213d.html?option=com_content&amp;view=article&amp;id=223:workshop-on-new-investment-strategies-business-models-for-the-nwsdb-2&amp;catid=8:interruption-notices&amp;Itemid=197&amp;lang=en">
-      <div class="blIm">
-     <img class="block" src="modules/mod_lofarticlescroller/assets/images/notice.png"   alt=""/>
-      </div>   Workshop on New Inv...     </a>
-           
-     
-	<div class="dis">Workshop on New Investment Strategies &amp; Business Models for the NWSDB at...</div>
-<hr>
-          <a target="_parent" class="lof-readmore" title=" Workshop on New Investment Strategies & Business Models for the NWSDB" href="index213d.html?option=com_content&amp;view=article&amp;id=223:workshop-on-new-investment-strategies-business-models-for-the-nwsdb-2&amp;catid=8:interruption-notices&amp;Itemid=197&amp;lang=en">
-        Read more      </a>
-    </div>				</div>      
-                       
-                        </div> 
-   		  </div>
- </div> 
+<div class="lof-main-wapper" style="height:160px;width:auto">
+	  <div class="lof-main-item page-1">
+		  <div class="lof-row" style="width:99.9%">
+			  <div class="lof-inner" style="height:auto">
+  				  <jdoc:include type="modules" name="position-8" style="xhtml" />
+						
+  			
+			  </div>
+		  </div>
+	  </div>
+  </div>
+</div> 
   <!-- END MAIN CONTENT of ARTICLESCROLLER MODULE --> 
+ 
  </div> 
 <script type="text/javascript">
 var _lofmain =  $('lofasc-90'); 
@@ -688,10 +654,27 @@ var object = new LofSlideshow ( _lofmain,
 
 </div>
 
+<?php endif; ?>	
+
+
+<?php if ($this->countModules('chamainleft')) : ?> 
+	
+	<div class="moduletablegray">
+	 <jdoc:include type="modules" name="chamainleft" style="xhtml" /> 
+	</div>
+	
+	 
+
+<?php endif?>
+
                     </div>
 				        
         </div>
+	
+	
     	<div class="col2">
+		
+	<?php if ($this->countModules('position-8')) : ?> 	
         		                    <div id="aside">
                          						<script type="text/javascript" src="<?php echo $this->baseurl . '/templates/' . $this->template ;  ?>/media/com_uniterevolution/assets/rs-plugin/js/jquery.themepunch.plugins.min.js"></script>
 						<script type="text/javascript" src="<?php echo $this->baseurl . '/templates/' . $this->template ;  ?>/media/com_uniterevolution/assets/rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
@@ -842,29 +825,59 @@ var object = new LofSlideshow ( _lofmain,
 							<!-- END REVOLUTION SLIDER -->
 				
                     </div>
+		    
+	    <?php endif;?>
 				                
                                <main id="content" role="main">
 					<!-- Begin Content -->
  					<div id="system-message-container">
+						<jdoc:include type="message" />
 	</div>
-
-					<div class="blog-featured" itemscope itemtype="http://schema.org/Blog">
-
-
-
-
-</div>
+					<?php
+					
+					if ($menu->getActive() != $menu->getDefault()) {
+						?>
+						
+					<!-- Begin Content -->
+					<jdoc:include type="modules" name="position-3" style="xhtml" />
+					<jdoc:include type="component" />
+					
+					<!-- End Content -->
+					<?php }?>
+					
 
  					<!-- End Content -->
 				</main>
         	
         </div>
+	
+	
+	
     </div>
+    
+     
+    
+    
+<?php if ($this->countModules('cha_middle')) : ?>
+	 
       <!-- Carsoul Start -->
     <div class="ser-cars">
  			                         <div class="moduletable">
  <div id="owl-demo" class="owl-carousel">
-<div class="item"><li class="item-289 deeper parent"><a href="#" ><img src="<?php echo $this->baseurl . '/templates/' . $this->template ;  ?>/images/services-tab/details-projects.jpg" alt="Details of Projects" /></a><ul class="nav-child unstyled small"><li class="item-290"><a href="indexc3ce.html?option=com_content&amp;view=article&amp;id=71&amp;Itemid=269&amp;lang=en" >Projects in Progress</a></li><li class="item-291"><a href="index3b22.html?option=com_content&amp;view=article&amp;id=74&amp;Itemid=272&amp;lang=en" >Projects in Pipe Line</a></li><li class="item-292"><a href="index5e05.html?option=com_content&amp;view=article&amp;id=72&amp;Itemid=270&amp;lang=en" >Projects Needing Fund</a></li><li class="item-293"><a href="indexbc5f.html?option=com_content&amp;view=article&amp;id=131&amp;Itemid=293&amp;lang=en" >Progress Monitoring</a></li><li class="item-333"><a href="index129b.html?option=com_content&amp;view=article&amp;id=132&amp;Itemid=333&amp;lang=en" >Beneficiaries</a></li></ul></li></div><div class="item"><li class="item-294 deeper parent"><a href="#" ><img src="<?php echo $this->baseurl . '/templates/' . $this->template ;  ?>/images/services-tab/tenders.jpg" alt="About Tenders/ Contracts" /></a><ul class="nav-child unstyled small"><li class="item-295"><a href="indexefb5.html?option=com_content&amp;view=article&amp;id=40&amp;Itemid=199&amp;lang=en" >Tender Notices</a></li><li class="item-296"><a href="indexb62a.html?option=com_content&amp;view=article&amp;id=109&amp;Itemid=296&amp;lang=en" >Awarded Contracts</a></li><li class="item-297"><a href="index7317.html?option=com_content&amp;view=article&amp;id=110&amp;Itemid=297&amp;lang=en" >Registered Suppliers</a></li><li class="item-298"><a href="indexa612.html?option=com_content&amp;view=article&amp;id=32&amp;Itemid=190&amp;lang=en#general_infomation" >General Information</a></li><li class="item-299"><a href="http://www.waterboard.lk/web/index.php?option=com_content&amp;view=article&amp;id=168&amp;Itemid=335&amp;lang=en" >Tender Specificaiotns</a></li></ul></li></div><div class="item"><li class="item-300 deeper parent"><a href="#" ><img src="<?php echo $this->baseurl . '/templates/' . $this->template ;  ?>/images/services-tab/Structure-Bill%20Tariff.jpg" alt="Tariff Structure for Water Billing" /></a><ul class="nav-child unstyled small"><li class="item-301"><a href="indexc135.html?option=com_content&amp;view=article&amp;id=34&amp;Itemid=192&amp;lang=en" >Water Tariff</a></li><li class="item-302"><a href="indexc135.html?option=com_content&amp;view=article&amp;id=34&amp;Itemid=192&amp;lang=en" >Sewerage Tariff</a></li><li class="item-303"><a href="indexc135.html?option=com_content&amp;view=article&amp;id=34&amp;Itemid=192&amp;lang=en" >Bill Calculator</a></li></ul></li></div><div class="item"><li class="item-304 deeper parent"><a href="#" ><img src="<?php echo $this->baseurl . '/templates/' . $this->template ;  ?>/images/services-tab/consumer.jpg" alt="Consumer Services" /></a><ul class="nav-child unstyled small"><li class="item-305"><a href="index93ca.html?option=com_content&amp;view=article&amp;id=33&amp;Itemid=191&amp;lang=en" >New Connections</a></li><li class="item-306"><a href="index06db.html?option=com_content&amp;view=article&amp;id=134&amp;Itemid=306&amp;lang=en" >Commercial Services</a></li><li class="item-307"><a href="indexe706.html?option=com_content&amp;view=article&amp;id=123&amp;Itemid=267&amp;lang=en" >Charges/Rates</a></li><li class="item-308"><a href="indexa612.html?option=com_content&amp;view=article&amp;id=32&amp;Itemid=190&amp;lang=en" >Whom to Contact</a></li><li class="item-309"><a href="indexa906.html?option=com_content&amp;view=article&amp;id=29&amp;Itemid=178&amp;lang=en" >Online Services</a></li><li class="item-310"><a href="indexf4e5.html?option=com_content&amp;view=article&amp;id=111&amp;Itemid=310&amp;lang=en" >Mobile Services (SMS Based)</a></li></ul></li></div><div class="item"><li class="item-311 deeper parent"><a href="#" ><img src="<?php echo $this->baseurl . '/templates/' . $this->template ;  ?>/images/services-tab/public-relations.jpg" alt="Public Relations" /></a><ul class="nav-child unstyled small"><li class="item-312"><a href="index128a.html?option=com_content&amp;view=article&amp;id=41&amp;Itemid=200&amp;lang=en" >Career Opportunities</a></li><li class="item-313"><a href="index8a71.html?option=com_content&amp;view=article&amp;id=126&amp;Itemid=330&amp;lang=en" >Promotional Downloads</a></li><li class="item-314"><a href="index8214.html?option=com_jevents&amp;view=day&amp;layout=listevents&amp;Itemid=314&amp;lang=en" >Special Events</a></li><li class="item-315"><a href="index3cdc.html?option=com_content&amp;view=article&amp;id=135&amp;Itemid=315&amp;lang=en" >Water Supply Details</a></li></ul></li></div></div>
+	  
+		  
+	
+	
+	
+	<jdoc:include type="modules" name="cha_middle" style="none" />
+	
+		
+
+
+
+
+
+</div>
 
 
 
@@ -872,169 +885,63 @@ var object = new LofSlideshow ( _lofmain,
 
  				     </div>
        <!-- Carsoul End -->
-     
+
+  <?php endif; ?>   
+  
+ <?php if ($this->countModules('position-6') || $this->countModules('position-7') || $this->countModules('charight') ) : ?> 
       <!-- Quick Links and What New -->
     <div class="quick-rel">
+<?php if ($this->countModules('position-6') || $this->countModules('position-7') ) : ?>
     	<div class="col3">
        
      		                      <div id="aside">
-                        <div class="moduletable">
+<?php if ($this->countModules('position-6')) : ?>
+					      
+ <div class="moduletable">
  
+<jdoc:include type="modules" name="position-6" style="xhtml" />
 
-<div class="custom"  >
-	<ul>
-<li><a href="indexa906.html?option=com_content&amp;view=article&amp;id=29&amp;Itemid=178&amp;lang=en"><img src="<?php echo $this->baseurl . '/templates/' . $this->template ;  ?>/images/icon/griven.png" alt="" />Tell us your<br /><strong>Grievances</strong></a></li>
-<li><a href="https://payments.waterboard.lk/payment" target="_blank"><img src="<?php echo $this->baseurl . '/templates/' . $this->template ;  ?>/images/icon/payonline.png" alt="" />Bill pay online<br /><strong>Pay online</strong></a></li>
-<li><a href="http://bis.waterboard.lk/ebis/" target="_blank"><img src="<?php echo $this->baseurl . '/templates/' . $this->template ;  ?>/images/icon/customer.png" alt="" />Register here<br /><strong>Customer Care Zone</strong></a></li>
-<li><a href="indexbd64.html?option=com_content&amp;view=article&amp;id=197&amp;Itemid=426&amp;lang=en"><img src="<?php echo $this->baseurl . '/templates/' . $this->template ;  ?>/images/icon/new.png" alt="" />safety of drinking &nbsp;water<br /><strong>Water Safety Plans</strong><br /></a></li>
-<li><a href="index128a.html?option=com_content&amp;view=article&amp;id=41&amp;Itemid=200&amp;lang=en"><img src="<?php echo $this->baseurl . '/templates/' . $this->template ;  ?>/images/icon/career.png" alt="" />Review<br /><strong>Career Opportunities</strong></a></li>
-<li><a href="index097c.html?option=com_content&amp;view=category&amp;layout=blog&amp;id=8&amp;Itemid=197&amp;lang=en"><img src="<?php echo $this->baseurl . '/templates/' . $this->template ;  ?>/images/icon/inttrup.png" alt="inttrup" />Water Supply <br /><strong>Interruption Notices</strong></a></li>
-<li><a href="index9de0.html?option=com_content&amp;view=article&amp;id=111&amp;Itemid=318&amp;lang=en"><img src="<?php echo $this->baseurl . '/templates/' . $this->template ;  ?>/images/icon/level.png" alt="level" />Water Level<br /><strong>via SMS</strong></a></li>
-<li><a href="index26d1.html?option=com_kunena&amp;view=home&amp;defaultmenu=354&amp;Itemid=352"><img src="<?php echo $this->baseurl . '/templates/' . $this->template ;  ?>/images/icon/forum.png" alt="forum" />Join Our Community<br /><strong>Forum</strong></a></li>
-<li><a href="index30c8.html?option=com_content&amp;view=article&amp;id=136&amp;Itemid=384"><img src="<?php echo $this->baseurl . '/templates/' . $this->template ;  ?>/images/icon/qual.png" alt="" />Drinking Water<br /><strong> Quality</strong></a></li>
-</ul>
-<ul class="none">
-<li><a href="indexe37c.html?option=com_content&amp;view=article&amp;id=137&amp;Itemid=385">Supplier Registrations</a>&nbsp;<a href="indexe37c.html?option=com_content&amp;view=article&amp;id=137&amp;Itemid=385" style="font-size: 12.1599998474121px; line-height: 15.8079996109009px;">2015</a><a href="indexe37c.html?option=com_content&amp;view=article&amp;id=137&amp;Itemid=385"></a></li>
-<li><a href="indexd687.html?option=com_content&amp;view=article&amp;id=138&amp;Itemid=386">Safe Water Coverage</a></li>
-<li><a href="index6d09.html?option=com_content&amp;view=article&amp;id=139&amp;Itemid=387">Bacteriological Quality of Water</a></li>
-</ul></div>
+
 </div>
+<?php endif; ?>
+
+<?php if ($this->countModules('position-7')) : ?>
 <div class="moduletable">
- <h3>Video Highlight</h3> 
-<div class="yendifVideoShare">
+<jdoc:include type="modules" name="position-7" style="xhtml" />
 
-<div class="yendifplayer" data-vid="5" data-autoplay="0" data-controlbar="1" data-embed="0" data-fullscreen="0"><video controls poster=http://www.waterboard.lk/web/media/yendifvideoshare/videos/5/Diyapinbindu_poster.jpg><source type="video/youtube" src="http://www.youtube.com/watch?v=vr5Rcz3CJmg"></video></div>
-</div></div>
-
-                    </div>
+</div>
+<? endif;?>
+                </div>
 				        
         </div>
+	
+<?php endif;?>
     	<div class="col4">
         		                    <div id="aside">
-                        <div class="moduletable">
- 
-
-<div class="custom"  >
-	<ul>
-<li><a href="http://www.complaints.gov.lk/" target="_blank">Public Grievances Management</a></li>
-<li><a href="http://www.mwsd.gov.lk/" target="_blank">Ministry of Water Supply and Drainage</a></li>
-<li><a href="http://www.gic.gov.lk/" target="_blank">Government Information Center</a></li>
-<li><a href="http://www.kandywastewater.lk/" target="_blank">Kandy City Wastewater Management Project</a></li>
-<li><a href="http://www.communitywater.lk/" target="_blank">3rd International Conference on Community Water Services</a></li>
-<li><a href="http://www.sacosan.lk/" target="_blank">SACOSAN Regional Sanitation Centre</a></li>
-<li><a href="http://nwsdbrws.org/">Rural Water &amp; Sanitation Activities</a></li>
-</ul></div>
-</div>
-<div class="moduletableblue">
- <h3>News & Events</h3> <div id="lofasc-96" class="lof-articlessroller" style="height:410px; width:auto">
-<div class=" lof-vertical lof-container ">
+						    
+<?php if ($this->countModules('charight')) : ?>						    
+		
+	<jdoc:include type="modules" name="charight" style="xhtml" />			
+		
+<?php endif; ?>
 
 
- <!-- MAIN CONTENT of ARTICLESCROLLER MODULE --> 
-  <div class="lof-main-wapper" style="height:410px;width:auto">
- 		  		<div class="lof-main-item page-1">
-        		        		 <div class="lof-row" style="width:99.9%">
-                   <div class="lof-inner" style="height:auto">
-            <a target="_parent" class="lof-image-link " style=" height:74px; width:100%; display:block" title=" Workshop on New Investment Strategies & Business Models for the NWSDB" href="index742c.html?option=com_content&amp;view=article&amp;id=222:workshop-on-new-investment-strategies-business-models-for-the-nwsdb&amp;catid=15:news&amp;Itemid=196&amp;lang=en">
-          <img src="<?php echo $this->baseurl . '/templates/' . $this->template ;  ?>/cache/lofthumbs/292x74-1H6A3245.jpg" title=" Workshop on New Investment Strategies & Business Models for the NWSDB" />
-        </a> 
-    
-           <a class="lof-title" target="_parent" title=" Workshop on New Investment Strategies & Business Models for the NWSDB" href="index742c.html?option=com_content&amp;view=article&amp;id=222:workshop-on-new-investment-strategies-business-models-for-the-nwsdb&amp;catid=15:news&amp;Itemid=196&amp;lang=en">
-        Workshop on New Investment St...     </a>
-           
-           
-	<div class="dis">Workshop on New Investment Strategies &amp; Business Models for the...</div>
-
-          <a target="_parent" class="lof-readmore" title=" Workshop on New Investment Strategies & Business Models for the NWSDB" href="index742c.html?option=com_content&amp;view=article&amp;id=222:workshop-on-new-investment-strategies-business-models-for-the-nwsdb&amp;catid=15:news&amp;Itemid=196&amp;lang=en">
-        Read more      </a>
-    </div>				</div>      
-                                	<div class="lof-clearfix"></div>
-                       
-                        		 <div class="lof-row" style="width:99.9%">
-                   <div class="lof-inner" style="height:auto">
-            <a target="_parent" class="lof-image-link " style=" height:74px; width:100%; display:block" title="  WATER TANK AT BERUWALA FOR NWS & DB, UNDER  JICA ASSISTANCE." href="indexdf29.html?option=com_content&amp;view=article&amp;id=220:water-tank-at-beruwala-for-nws-db-under-jica-assistance&amp;catid=15:news&amp;Itemid=196&amp;lang=en">
-          <img src="<?php echo $this->baseurl . '/templates/' . $this->template ;  ?>/cache/lofthumbs/292x74-image001.png" title="  WATER TANK AT BERUWALA FOR NWS & DB, UNDER  JICA ASSISTANCE." />
-        </a> 
-    
-           <a class="lof-title" target="_parent" title="  WATER TANK AT BERUWALA FOR NWS & DB, UNDER  JICA ASSISTANCE." href="indexdf29.html?option=com_content&amp;view=article&amp;id=220:water-tank-at-beruwala-for-nws-db-under-jica-assistance&amp;catid=15:news&amp;Itemid=196&amp;lang=en">
-         WATER TANK AT BERUWALA FOR N...     </a>
-           
-           
-	<div class="dis">A LEADING JAPANEESE CONSTRCTION COMPANY CONSTRUCTS A 2000m3 CAPACITY...</div>
-
-          <a target="_parent" class="lof-readmore" title="  WATER TANK AT BERUWALA FOR NWS & DB, UNDER  JICA ASSISTANCE." href="indexdf29.html?option=com_content&amp;view=article&amp;id=220:water-tank-at-beruwala-for-nws-db-under-jica-assistance&amp;catid=15:news&amp;Itemid=196&amp;lang=en">
-        Read more      </a>
-    </div>				</div>      
-                       
-                        </div> 
-   		  		<div class="lof-main-item page-2">
-        		        		 <div class="lof-row" style="width:99.9%">
-                   <div class="lof-inner" style="height:auto">
-            <a target="_parent" class="lof-image-link " style=" height:74px; width:100%; display:block" title="Meeting with secretary Mr. B.M.U.D. Basnayake at 2015.09.24 in Water Board Head Office" href="index99f0.html?option=com_content&amp;view=article&amp;id=219:meeting-with-secretary-mr-b-m-u-d-basnayake-to-the-ministry-of-city-planning-water-supply-on-the-day-of-his-visit-to-nwsdb-at-2015-09-24&amp;catid=15:news&amp;Itemid=196&amp;lang=en">
-          <img src="<?php echo $this->baseurl . '/templates/' . $this->template ;  ?>/cache/lofthumbs/292x74-secvisit3.jpg" title="Meeting with secretary Mr. B.M.U.D. Basnayake at 2015.09.24 in Water Board Head Office" />
-        </a> 
-    
-           <a class="lof-title" target="_parent" title="Meeting with secretary Mr. B.M.U.D. Basnayake at 2015.09.24 in Water Board Head Office" href="index99f0.html?option=com_content&amp;view=article&amp;id=219:meeting-with-secretary-mr-b-m-u-d-basnayake-to-the-ministry-of-city-planning-water-supply-on-the-day-of-his-visit-to-nwsdb-at-2015-09-24&amp;catid=15:news&amp;Itemid=196&amp;lang=en">
-       Meeting with secretary Mr. B.M...     </a>
-           
-           
-	<div class="dis">Meeting with secretary Mr. B.M.U.D. Basnayake to the ministry of...</div>
-
-          <a target="_parent" class="lof-readmore" title="Meeting with secretary Mr. B.M.U.D. Basnayake at 2015.09.24 in Water Board Head Office" href="index99f0.html?option=com_content&amp;view=article&amp;id=219:meeting-with-secretary-mr-b-m-u-d-basnayake-to-the-ministry-of-city-planning-water-supply-on-the-day-of-his-visit-to-nwsdb-at-2015-09-24&amp;catid=15:news&amp;Itemid=196&amp;lang=en">
-        Read more      </a>
-    </div>				</div>      
-                                	<div class="lof-clearfix"></div>
-                       
-                        		 <div class="lof-row" style="width:99.9%">
-                   <div class="lof-inner" style="height:auto">
-    
-           <a class="lof-title" target="_parent" title="CALL FOR PAPERS FOR THE RESEARCH SYMPOSIUM  2016" href="index055b.html?option=com_content&amp;view=article&amp;id=217:call-for-papers-for-the-research-symposium-2016&amp;catid=15:news&amp;Itemid=196&amp;lang=en">
-       CALL FOR PAPERS FOR THE RESEAR...     </a>
-           
-           
-	<div class="dis">National Water Supply &amp; Drainage Board will arrange a research...</div>
-
-          <a target="_parent" class="lof-readmore" title="CALL FOR PAPERS FOR THE RESEARCH SYMPOSIUM  2016" href="index055b.html?option=com_content&amp;view=article&amp;id=217:call-for-papers-for-the-research-symposium-2016&amp;catid=15:news&amp;Itemid=196&amp;lang=en">
-        Read more      </a>
-    </div>				</div>      
-                       
-                        </div> 
-   		  </div>
- </div> 
-  <!-- END MAIN CONTENT of ARTICLESCROLLER MODULE --> 
- </div> 
-<script type="text/javascript">
-var _lofmain =  $('lofasc-96'); 
-var object = new LofSlideshow ( _lofmain,
-							  { 
-								  fxObject:{
-									transition:Fx.Transitions.Quad.easeInOut,  
-									duration:500								  },
-								  startItem:0,
-								  interval:5000,
-								  direction :'vrup', 
-								  navItemHeight:32,
-								  navItemWidth:32,
-								  navItemsDisplay:3,
-								  navPos:'0'
-							  } );
-	object.start( 1, null );
-</script>
-
-</div>
-
-                    </div>
+              </div>
 				        
         </div>
     </div>
+    
+<?php endif?>
       <!-- Quick Links and What New End -->
+      
+      
+   
       
     <!-- Footer -->
 	<footer class="footer" role="contentinfo">
     					<div id="breadcrumbs">
 						
-<ul class="breadcrumb">
-	<li class="active">You are here: &#160;</li><li class="active"><span>Home</span></li></ul>
+<jdoc:include type="modules" name="position-2" style="none" />
 
                        
                         <div class="social-m">
@@ -1043,12 +950,12 @@ var object = new LofSlideshow ( _lofmain,
 	<table>
 <tbody>
 <tr>
-<td><a href="https://www.facebook.com/nwsdbSL" target="_blank"><img src="<?php echo $this->baseurl . '/templates/' . $this->template ;  ?>/images/facebook.png" alt="" width="23" height="22" /></a></td>
-<td><a href="https://twitter.com/NWSDB" target="_blank"><img src="<?php echo $this->baseurl . '/templates/' . $this->template ;  ?>/images/tweet.png" alt="" /></a></td>
+<td><a href="https://www.facebook.com/" target="_blank"><img src="<?php echo $this->baseurl . '/templates/' . $this->template ;  ?>/images/facebook.png" alt="" width="23" height="22" /></a></td>
+<td><a href="https://twitter.com/" target="_blank"><img src="<?php echo $this->baseurl . '/templates/' . $this->template ;  ?>/images/tweet.png" alt="" /></a></td>
 <td><a href="#"><img src="<?php echo $this->baseurl . '/templates/' . $this->template ;  ?>/images/you.png" alt="" /></a></td>
-<td><a href="https://www.linkedin.com/profile/view?id=369427362&amp;authType=name&amp;authToken=v4Q5&amp;trk=miniprofile-primary-view-button" target="_blank"><img src="<?php echo $this->baseurl . '/templates/' . $this->template ;  ?>/images/link.png" alt="" /></a></td>
+<td><a href="https://www.linkedin.com/" target="_blank"><img src="<?php echo $this->baseurl . '/templates/' . $this->template ;  ?>/images/link.png" alt="" /></a></td>
 <td style="width: 5px;">&nbsp;</td>
-<td><a href="#" class="tops"><img title="Go to Top" src="images/top.jpg" alt="top" /></a></td>
+<td><a href="#top" class="tops"><img title="Go to Top" src="images/top.jpg" alt="top" /></a></td>
 </tr>
 </tbody>
 </table></div>
@@ -1114,17 +1021,15 @@ var object = new LofSlideshow ( _lofmain,
 		<div class="infoter">
         	<div class="gicbaner">
  				
-
-<div class="custom"  >
-	<p><a href="https://mail.waterboard.lk/owa/" target="_blank"><img src="<?php echo $this->baseurl . '/templates/' . $this->template ;  ?>/images/webmail.png" alt="" /></a>&nbsp; <a href="http://www.gic.gov.lk/" target="_blank"><img src="<?php echo $this->baseurl . '/templates/' . $this->template ;  ?>/images/icon/gic_en.gif" alt="" width="130" height="48" /></a>&nbsp; <img src="<?php echo $this->baseurl . '/templates/' . $this->template ;  ?>/images/icon/1939.gif" alt="" width="113" height="48" /></p></div>
+		<jdoc:include type="modules" name="footer" style="xhtml" />	
 
              </div>
         	<div class="visit">
  				 
 
-<div class="lastmodified">Last Update : 19 October 2015.</div>
+<div class="lastmodified"> &copy; <?php echo date('Y'); ?> <?php echo $sitename; ?></div>
              </div>
- 			<div class="footer1">Copyright &#169; 2015 National Water Supply and Drainage Board.<br> All Rights Reserved.</div>
+ 			<div class="footer1">Copyright &#169; 2015 deminature studio charlie maere template designs<br> All Rights Reserved.</div>
 <div class="footer2"></div>
 
  		</div>

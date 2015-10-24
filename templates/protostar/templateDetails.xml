@@ -3,9 +3,9 @@
 <extension version="3.1" type="template" client="site">
 	<name>protostar</name>
 	<version>1.0</version>
-	<creationDate>4/30/2012</creationDate>
-	<author>Kyle Ledbetter</author>
-	<authorEmail>admin@joomla.org</authorEmail>
+	<creationDate>10/23/2015</creationDate>
+	<author>Charlie Maere</author>
+	<authorEmail>cmaere@kcn.unima.mw</authorEmail>
 	<copyright>Copyright (C) 2005 - 2015 Open Source Matters, Inc. All rights reserved.</copyright>
 	<description>TPL_PROTOSTAR_XML_DESCRIPTION</description>
 	<files>
@@ -42,6 +42,9 @@
 		<position>position-12</position>
 		<position>position-13</position>
 		<position>position-14</position>
+		<position>cha_middle</position>
+		<position>charight</position>
+		<position>chamainleft</position>
 		<position>cha-mainmenu-item1-position-1</position>
 		<position>cha-mainmenu-item1-position-2</position>
 		<position>cha-mainmenu-item1-position-3</position>
